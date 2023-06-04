@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: url("blockchain-for-commodities_hero_3600x1600.png") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(117, 90, 216);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 15px;
+}
+
+.navbar ul li:first-child {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .right-items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .right-items li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navbar a:first-child {
+font-size: 1.25rem; /* Set the font size for "emex" */
+}
+
+.container {
+  
+  max-width: 1297px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 2.0rem;
+  color: rgb(138, 106, 251);
+  font-weight: 500;
+  text-align: center;
+}
+
+.trade-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.trade-section h1 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.trade-section p {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.trade-section form {
+  margin-top: 15px;
+}
+
+.trade-section label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.trade-section input[type="text"],
+.trade-section input[type="number"] {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.trade-section input[type="submit"] {
+  margin-top: 15px;
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  color: #513099;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.trade-section #contractBalance {
+  font-weight: normal;
+}
+
+.trade-section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.trade-section table th,
+.trade-section table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.trade-section table th {
+  background-color: #eee;
+  color: #333;
+}
+
+.trade-section table td button {
+  margin-top: 10px;
+  display: block;
+}
+
+.trade-section table td:first-child {
+  text-align: left;
+}
+
+.trade-section table td:last-child {
+  text-align: center;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact enex</title>
+  <link rel="stylesheet" href="style17.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-right: 15px;
+    }
+
+    .navbar ul li:first-child {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar .right-items {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .right-items li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .navbar a:first-child {
+  font-size: 1.25rem; /* Set the font size for "emex" */
+}
+
+    .container {
+      background-color: #fff;
+      margin-top: 50px;
+      padding: 20px;
+    }
+  </style>
+  <script>
+    function showMessage() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      if (name !== "" && email !== "" && message !== "") {
+        alert("Message sent successfully!");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">enex</a></li>
+    </ul>
+    <ul class="right-items">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="abtus.html">About Us</a></li>
+      <li><a href="captcha.html">Trade Energy</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">VIT Pune</div>
+          <div class="text-two">Bibwewadi 411037</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 90116 62709</div>
+          <div class="text-two">+91 98259 50975</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">info.enex21@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any queries or suggestions, feel free to contact us. It's our pleasure to help you.</p>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="input-box">
+            <input type="text" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="input-box message-box">
+            <textarea id="message" placeholder="Enter your message"></textarea>
+          </div>
+          <div class="button">
+            <input type="button" value="Send Now" onclick="showMessage()" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

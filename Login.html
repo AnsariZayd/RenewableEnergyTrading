@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login to MetaMask</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Login with MetaMask</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Your Ethereum Address:</label>
+          <input type="text" id="address" name="address">
+        </div>
+        <br><br>
+        <button type="button" onclick="redirectToHome()">Connect with MetaMask</button>
+      </form>
+      <script src="app.js"></script>
+      <script src = "js/script2.js"></script>
+      <script>
+        function redirectToHome() {
+          var addressInput = document.getElementById('address');
+          var enteredAddress = addressInput.value;
+          var targetAddress = "0x09349b783b97d97bD7BbDac1A972f971a3985961";
+
+          if (enteredAddress === targetAddress) {
+            window.location.href = "home.html"; // Replace "home.html" with the actual URL of your home page
+          } else {
+            alert("Invalid address. Please try again.");
+          }
+        }
+      </script>
+    </section>
+  </body>
+</html>

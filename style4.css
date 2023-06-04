@@ -1,0 +1,54 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center align the table */
+table {
+  margin: 0 auto;
+}
+
+/* Add rounded corners to the table */
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Style table headers */
+th {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Style table cells */
+td {
+  padding: 10px;
+}
+
+/* Style the create trade form */
+form {
+  text-align: center;
+}
+
+/* Style the create trade form inputs and button */
+form input[type="text"],
+form input[type="number"],
+form button {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Style the h1 headings */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Add some spacing between the tables */
+table + h1,
+table + table {
+  margin-top: 20px;
+}
